@@ -18,11 +18,11 @@ class Main extends PluginBase{
     	if(!$sender instanceof Player){
     		$this->getLogger()->info("Use this command Ingame");
     	} else {
-    		$sender->mainui($sender);
+    		$sender->mainui($player);
     	}
     	switch($cmd->getName()){
     		case "banui":
-    		    $sender->mainui($sender);
+    		    $sender->mainui($player);
         
     	}
         return true;
