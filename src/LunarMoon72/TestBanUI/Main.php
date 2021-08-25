@@ -6,7 +6,6 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\CommandSender;
 
 use pocketmine\Player;
 use pocketmine\Server;
