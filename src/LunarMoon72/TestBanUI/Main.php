@@ -1,6 +1,6 @@
 <?php
 
-namespace Imbored;
+namespace LunarMoon72\TestBanUI;
 
 use pocketmine\plugin\PluginBase;
 
@@ -23,7 +23,9 @@ class Main extends PluginBase{
     	switch($cmd->getName()){
     		case "banui":
     		    $sender->mainui($sender);
+        
     	}
+        return true;
     }
     public function banui($player){
     	$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
