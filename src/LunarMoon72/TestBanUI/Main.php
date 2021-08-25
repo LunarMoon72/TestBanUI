@@ -18,11 +18,11 @@ class Main extends PluginBase{
     	if(!$sender instanceof Player){
     		$this->getLogger()->info("Use this command Ingame");
     	} else {
-    		$sender->mainui($player);
+    		$sender->mainui();
     	}
     	switch($cmd->getName()){
     		case "banui":
-    		    $sender->mainui($player);
+    		    $sender->mainui();
         
     	}
         return true;
@@ -35,15 +35,15 @@ class Main extends PluginBase{
             }
             switch($data){
             	case 0:
-            	    $player->banplayer($player);
+            	    $player->banplayer();
             	break;
 
             	case 1:
-            	    $player->kickplayer($player);
+            	    $player->kickplayer();
             	break;
 
             	case 2:
-            	    $player->freezeplayer($player);
+            	    $player->freezeplayer();
             }
     	});
     	$form->setTitle("Choose an Option");
