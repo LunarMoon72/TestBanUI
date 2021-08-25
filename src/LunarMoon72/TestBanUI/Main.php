@@ -1,6 +1,6 @@
 <?php
 
-namespace LunarMoon72\TestBanUI;
+namespace Imbored;
 
 use pocketmine\plugin\PluginBase;
 
@@ -48,6 +48,8 @@ class Main extends PluginBase{
     	$form->addButton("Ban a Player!");
     	$form->addButton("Kick a Player!");
     	$form->addButton("Freeze a Player!");
+    	$form->sendToPlayer();
+    	return $form;
     }
     public function banplayer($player){
     	$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -63,6 +65,8 @@ class Main extends PluginBase{
     	});
     	$form->setTitle("Type a player's name to ban them! WARNING: IP BAN");
     	$form->addInput("Ex: LunarMoon72");
+    	$form->sendToPlayer();
+    	return $form;
     }
     public function kickplayer($player){
     	$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -78,6 +82,8 @@ class Main extends PluginBase{
     	});
     	$form->setTitle("Type a player's name to kick them!");
     	$form->addInput("Ex: LunarMoon72");
+    	$form->sendToPlayer();
+    	return $form;
     }
     public function freezeplayer($player){
     	$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -93,6 +99,8 @@ class Main extends PluginBase{
     	});
     	$form->setTitle("Type a player's name to freeze them!");
     	$form->addInput("Ex: LunarMoon72");
+    	$form->sendToPlayer();
+    	return $form;
     }
 
 }
