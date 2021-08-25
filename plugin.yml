@@ -1,0 +1,16 @@
+name: TestBanUI
+api: 3.21.1
+version: 1.0.0
+main: LunarMoon72\TestBanUI\Main
+mcpe-protocal: 448
+
+commands:
+  banui:
+    permission: testbanui.cmd
+    aliases: ban
+    description: Opens Ban UI
+    
+permissions:
+  testbanui.cmd:
+    description: Best perm
+    default: op
